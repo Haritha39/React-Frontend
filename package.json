@@ -1,0 +1,38 @@
+{
+  "name": "text-summarizer",
+  "version": "1.0.0",
+  "description": "React Web Application for Text summarization ",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "clean_node_modules": "rm -r node_modules/",
+    "build": "webpack --config webpack.config.js --hot",
+    "start": "npm run build && webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haritha39/React-Frontend.git"
+  },
+  "author": "Haritha K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haritha39/React-Frontend/issues"
+  },
+  "homepage": "https://github.com/Haritha39/React-Frontend#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

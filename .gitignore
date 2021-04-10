@@ -1,0 +1,5 @@
+# Exclude node modules from getting pushed to repo
+/node_modules
+
+# dist folder generates on the by compilers for the production app
+/dist
