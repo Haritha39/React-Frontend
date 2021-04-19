@@ -2,7 +2,7 @@
   "name": "text-summarizer",
   "version": "1.0.0",
   "description": "React Web Application for Text summarization ",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "clean": "rimraf dist/*",
     "clean_node_modules": "rm -r node_modules/",
