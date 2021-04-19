@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'MyFont';
     src: url('./my-font.woff2') format('woff2'),
       url('./my-font.woff') format('woff');
@@ -11,5 +11,11 @@ div{
     font-family: 'MyFont';
     font-size: 30px;
     justify-content: left;
-    /* background: url('./rgukt.png'); */
+     background: url('./rgukt.png'); 
+} */
+
+
+textarea{
+  resize: none;
 }
+
