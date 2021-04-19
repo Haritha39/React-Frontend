@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Haritha39/React-Frontend#readme",
   "dependencies": {
+    "@babel/preset-typescript": "^7.13.0",
+    "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
