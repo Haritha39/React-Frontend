@@ -10,14 +10,15 @@ export default function InputProcessor({summary}) {
         if(validateInput()){
             APIService.post(inputRef.current.value.trim())
             .then((response)=>{
-                    summary(response.data.data);
+                console.log(response)
+                    summary(response.data);
                 if(response && response.status == '200'){
-                    summary(response.data.data);
+                    summary(response.data);
                 } else{
-                    setErrorMsg(response.data.message);
+                    setErrorMsg(response.data);
                 }
             }).catch((error)=>{
-                setErrorMsg(error.data.message);
+                setErrorMsg(error);
             })
         }
     }
