@@ -7,7 +7,7 @@
     "clean": "rimraf dist/*",
     "clean_node_modules": "rm -r node_modules/",
     "build": "webpack --config webpack.config.js --hot",
-    "start": "npm run build && webpack serve --open"
+    "start": "npm run build && webpack serve --host=0.0.0.0 --port=8080 --open"
   },
   "repository": {
     "type": "git",
