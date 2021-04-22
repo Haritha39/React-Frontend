@@ -8,7 +8,7 @@ import NavBarHeader from './header';
 
 function Root() {
     const [summary, setSummary] = React.useState('');
-    return (<div className="container-fluid">
+    return (<div className="container-fluid full-width">
         <NavBarHeader />
         <div className="container-fluid">
             <div className="row justify-content-between">

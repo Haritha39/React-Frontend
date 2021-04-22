@@ -4,7 +4,7 @@ export default function SummaryViewer({summary}) {
 
     return (
         <div className="col-sm">
-            <div className="page-header">
+            <div className="page-header heading-font">
                 <h2>Summary Output</h2>
             </div>
             <div>

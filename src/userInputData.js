@@ -36,7 +36,7 @@ export default function InputProcessor({summary}) {
 
     return (
         <div className="col-sm left-box">
-            <div className="page-header">
+            <div className="page-header heading-font">
                 <h2>Input Text</h2>
             </div>
             <div>
