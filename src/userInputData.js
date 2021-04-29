@@ -50,7 +50,10 @@ export default function InputProcessor({ summary }) {
             </div>
             <div className="d-flex justify-content-between">
                 <p className="text-danger">{errorMsg}</p>
-                <button className="btn btn-success" onClick={getSummary}>Get Summary</button>
+                <div>
+                    <input type="file" onChange={(e)=>console.log(e.currentTarget.value)}></input>
+                    <button className="btn btn-success" onClick={getSummary}>Get Summary</button>
+                </div>
             </div>
         </div>
     )

@@ -12,8 +12,12 @@ textarea{
   position: absolute;
   bottom: 0;
   width: 100%;
+  color: #ffff;
 }
 .header-heading{
+  color: white;
+}
+.header-heading:hover{
   color: white;
 }
 
