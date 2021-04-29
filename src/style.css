@@ -1,35 +1,55 @@
- @font-face {
-    font-family: 'MyFont';
-    font-weight: 600;
-    font-style: normal;
-}
-/*
-div{
-    background-color: rgb(201, 176, 176);
-    color: rgb(76, 0, 255);
-    font-family: 'MyFont';
-    font-size: 30px;
-    justify-content: left;
-     background: url('./rgukt.png'); 
-} */
-
-
 textarea{
   resize: none;
+  width: inherit;
 }
 
 .header{
   background-color:rgb(79, 79, 124);
 }
+
+.footer{
+  background-color: rgb(79, 79, 124);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .header-heading{
   color: white;
+}
+
+.page-header{
+  color: #ffff;
+  text-align:center;
 }
 
 .full-width{
   padding-left: 0px;
   padding-right: 0px;
 }
-.heading-font{
-  font-family: 'MyFont';
-  font-size: 10px;
+
+.content{
+  width: 100%;
+  position: relative;
+  margin-top: 5%;
+}
+
+.content-heading{
+  padding-left: 0px;
+}
+
+.icon-help{
+    padding-right: 5px;
+}
+
+.help-form{
+  width: 30%;
+  margin-top: 5%;
+  border: 1px solid rgb(79, 79, 124);
+  padding: 30px;
+  position: fixed;
+  z-index: 1;
+  background: rgb(79, 79, 124);
+  border-radius: 5px;
+  right: 0;
+  left: 0;
 }
