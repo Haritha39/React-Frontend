@@ -8,12 +8,12 @@ export default function InputProcessor({ summary }) {
     // Post the Input data to server and get the summary in response
     const getSummary = () => {
         if (validateInput()) {
-            APIService.post(inputRef.current.value.trim())
+            APIService.post('summary',inputRef.current.value.trim())
                 .then((response) => {
                     console.log(response)
-                    summary(response.data);
+                    summary(response.data.data);
                     if (response && response.status == '200') {
-                        summary(response.data);
+                        summary(response.data.data);
                     } else {
                         setErrorMsg(response.data);
                     }

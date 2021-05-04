@@ -3,10 +3,11 @@ import axios from 'axios';
 class ApiService{
 
     //POST
-    post(data){
-        return axios.post('http://localhost:5000/createTicket',{
-            "Access-Control-Allow-Origin": "*",
-            data:data
+    post(endPoint,data){
+        return axios.post('http://localhost:5000/'+endPoint,{"data":data},{
+            headers:{
+                "Access-Control-Allow-Origin": "*",
+                "Content-Type":"application/json"}
         })
     }
 

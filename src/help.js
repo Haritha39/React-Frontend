@@ -59,7 +59,7 @@ export default function HelpDesk({ close }) {
 
     const submitTicket = () => {
         if (validation('all')) {
-            APIService.post(data)
+            APIService.post('ticket',data)
                 .then((response) => {
                     if (response && response.status == 200) {
                         setToast(response);

@@ -7,6 +7,9 @@ textarea{
   background-color:rgb(79, 79, 124);
 }
 
+.header-links{
+  margin-right: 10px;
+}
 .footer{
   background-color: rgb(79, 79, 124);
   position: absolute;
