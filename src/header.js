@@ -1,13 +1,15 @@
 import React from 'react';
 import HelpDesk from './help';
 
+
 export default function NavBarHeader() {
     const [help, showHelpBox] = React.useState(false);
 
     const closeHelp = (status) => {
         if (status) {
-            showHelpBox(!help);
+            
         }
+        showHelpBox(false);
     }
 
     return (
@@ -16,12 +18,12 @@ export default function NavBarHeader() {
                 <a className="navbar-brand header-heading" href="/">Text Summarizer</a>
                 <div className="navbar-nav ml-auto">
                     <button className="btn btn-light header-links">Statistics</button>
-                    <button className="btn btn-light" onClick={() => { showHelpBox(!help) }}><span className="fas fa-info-circle icon-help"></span>Help</button>
+                    <button className="btn btn-light" onClick={() => { showHelpBox(true) }}><span className="fas fa-info-circle icon-help"></span>Help</button>
                 </div>
             </nav>
-            {help &&
+            {help ?
                 <HelpDesk
-                    close={(e) => closeHelp(e)} />}
+                    close={(e) => closeHelp(e)} /> : null}
 
         </>
     )

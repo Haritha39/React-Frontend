@@ -5,7 +5,6 @@ import './style.css';
 import InputProcessor from './userInputData';
 import SummaryViewer from './outputSummary';
 import NavBarHeader from './header';
-import HelpDesk from './help';
 import Footer from './footer';
 
 function Root() {

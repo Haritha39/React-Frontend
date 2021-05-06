@@ -44,7 +44,6 @@ export default function InputProcessor({ summary }) {
                     className="bg-light"
                     ref={inputRef}
                     autoFocus={true}
-                    name={"paragraph"}
                     placeholder="Enter Text or Paste any paragraphs"
                     required></textarea>
             </div>
