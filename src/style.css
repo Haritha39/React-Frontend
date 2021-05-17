@@ -60,3 +60,11 @@ textarea{
   right: 0;
   left: 0;
 }
+
+.float-clear-btn{
+  border: 1px solid rgb(79, 79, 124);
+  z-index: 1;
+  background: rgb(79, 79, 124);
+  border-radius: 5px;
+  color: #ffff;
+}
