@@ -1,17 +1,35 @@
+body{
+  background-color: rgb(17, 27, 35,1);
+  color: rgb(255, 255, 255);
+}
+
 textarea{
   resize: none;
   width: inherit;
 }
+.bg-light{
+  background-color: #dde0e4!important;
+}
+
+.txt-light{
+  color: white;
+}
 
 .header{
-  background-color:rgb(79, 79, 124);
+  background-color:transparent;
 }
 
 .header-links{
   margin-right: 10px;
+  color: white;
 }
+
+.btn:hover{
+  background-color: white;
+}
+
 .footer{
-  background-color: rgb(79, 79, 124);
+  background-color: transparent;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -51,20 +69,20 @@ textarea{
 .help-form{
   width: 30%;
   margin-top: 5%;
-  border: 1px solid rgb(79, 79, 124);
+  border: 1px solid #ffff;
   padding: 30px;
   position: fixed;
   z-index: 1;
-  background: rgb(79, 79, 124);
+  background: #111b23;
   border-radius: 5px;
   right: 0;
   left: 0;
 }
 
 .float-clear-btn{
-  border: 1px solid rgb(79, 79, 124);
+  border: 1px solid #111b23;
   z-index: 1;
-  background: rgb(79, 79, 124);
+  background: #111b23;
   border-radius: 5px;
   color: #ffff;
 }

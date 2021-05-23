@@ -87,7 +87,7 @@ export default function InputProcessor({ summary }) {
         <div className="col-sm">
             {loader && <Loader />}
             <h4>Input Text</h4>
-            <div onMouseEnter={()=>showClear(true)} onMouseLeave={()=>showClear(true)}>
+            <div onMouseEnter={()=>showClear(true)} onMouseLeave={()=>showClear(false)}>
                 <textarea
                     rows={15}
                     cols={100}
@@ -102,7 +102,7 @@ export default function InputProcessor({ summary }) {
                 <p className="text-danger">{errorMsg}</p>
                 <div>
                     <input type="file" onChange={(e)=>handleFileUpload(e)}></input>
-                    <button className="btn btn-success" onClick={getSummary}>Get Summary</button>
+                    <button className="btn txt-light" onClick={getSummary}>Get Summary</button>
                 </div>
             </div>
         </div>
