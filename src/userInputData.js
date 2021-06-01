@@ -19,8 +19,12 @@ export default function InputProcessor({ summary }) {
                     console.log(response)
                     summary(response.data.data);
                     if (response && response.status == '200') {
+                        if(response.data.data ==""){
+                            setErrorMsg("Invalid Input")
+                        }
                         summary(response.data.data);
                     } else {
+                        summary("")
                         setErrorMsg(response.data);
                     }
                 }).catch((error) => {
