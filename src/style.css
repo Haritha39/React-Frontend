@@ -1,6 +1,9 @@
 body{
-  background-color: rgb(17, 27, 35,1);
+  /* background-color: rgb(17, 27, 35,1); */
   color: rgb(255, 255, 255);
+  background: url('./Img.png'); 
+  background-repeat: no-repeat;
+  background-size: 100%; 
 }
 
 textarea{
@@ -85,4 +88,8 @@ textarea{
   background: #111b23;
   border-radius: 5px;
   color: #ffff;
+}
+
+.loader{
+  
 }

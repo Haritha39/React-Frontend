@@ -6,11 +6,12 @@ import InputProcessor from './userInputData';
 import SummaryViewer from './outputSummary';
 import NavBarHeader from './header';
 import Footer from './footer';
+import Loader from './loader';
 
 function Root() {
     const [summary, setSummary] = React.useState('');
 
-    return (<div className="container-fluid full-width">
+    return (<><div className="container-fluid full-width">
         <NavBarHeader />
         <div className="container-fluid content">
             <div className="row justify-content-between">
@@ -20,6 +21,8 @@ function Root() {
         </div>
         <Footer />
     </div>
+    <Loader />
+    </>
     );
 }
 ReactDOM.render(<Root />, document.querySelector("#app"))
