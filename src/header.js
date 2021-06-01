@@ -17,8 +17,8 @@ export default function NavBarHeader() {
             <nav className="navbar navbar-expand-sm fixed-top header">
                 <a className="navbar-brand header-heading" href="/">Text Summarizer</a>
                 <div className="navbar-nav ml-auto">
-                    <button className="btn btn-light header-links">Statistics</button>
-                    <button className="btn btn-light" onClick={() => { showHelpBox(true) }}><span className="fas fa-info-circle icon-help"></span>Help</button>
+                    <button className="btn header-links">Statistics</button>
+                    <button className="btn header-links" onClick={() => { showHelpBox(true) }}><span className="fas fa-info-circle icon-help"></span>Help</button>
                 </div>
             </nav>
             {help ?
